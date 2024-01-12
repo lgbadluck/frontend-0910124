@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #906090;
+            color:aquamarine;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="userData.php" method="get">
+        <div style="width: 100px"><label for="firstName">First Name: </label></div>
+        <input id="firstName" name="fName" type="text" />
+        
+        <div style="width: 100px"><label for="email">E-Mail: </label></div>
+        <input id="email" name="email" type="email" />
+
+        <div style="width: 100px"><label for="message">Message: </label></div>
+        <textarea name="message" rows="10" cols="30">Enter text message...</textarea>
+
+        <br>
+
+        <div style="width: 100px"><label for="country">Select country: </label></div>
+        <select id="country" name="country">
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Serbia">Serbia</option>
+            <option value="Romania">Romania</option>
+            <option value="Saturn" selected>Saturn</option>
+        </select>
+        <div><input type="submit" /></div>
+    </form>
+    <img src="dog.jpg" alt="dog"/>
+</body>
+<script src="js/script.js"></script>    
+</html>
